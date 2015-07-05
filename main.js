@@ -63,7 +63,7 @@ define(function (require, exports, module) {
     // Then create a menu item bound to the command
     // The label of the menu item is the name we gave the command (see above)
     var menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
-    menu.addMenuItem(Menus.DIVIDER);
+    menu.addMenuDivider();
 
     for(var i = 0; i < command_ids.length; i++){
         menu.addMenuItem(CMD_PREFIX + command_ids[i]);
